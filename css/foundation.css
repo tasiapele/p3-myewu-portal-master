@@ -1102,7 +1102,7 @@ button, .button {
   color: white;
   transition: background-color 300ms ease-out; }
   button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #007095; }
+    background-color: #73E355; }
   button:hover, button:focus, .button:hover, .button:focus {
     color: white; }
   button.secondary, .button.secondary {
@@ -2820,11 +2820,11 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #008cba;
+  color: #73E355;
   text-decoration: none;
   line-height: inherit; }
   a:hover, a:focus {
-    color: #0078a0; }
+    color: white; }
   a img {
     border: none; }
 
@@ -4258,7 +4258,7 @@ table {
     font-size: 0.875rem;
     color: white; }
   table tr.even, table tr.alt, table tr:nth-of-type(even) {
-    background: #f9f9f9; }
+    background: #333332; }
   table thead tr th,
   table tfoot tr th,
   table tbody tr td,
