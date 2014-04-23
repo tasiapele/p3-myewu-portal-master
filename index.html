@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <title>My Website</title>
+    <title>My EWU Portal</title>
     
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/styles.css" />    
@@ -16,68 +16,247 @@
   <body>
   
     <!-- Masthead -->
+      <!-- nav -->
+
+      <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="#">My EWU Portal</a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+        </ul>
+
+        <section class="top-bar-section">
+          <!-- Right Nav Section -->
+          <ul class="right">
+            
+            <li class="has-dropdown active">
+              <a href="#">Account</a>
+              <ul class="dropdown">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Sign Out</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Left Nav Section -->
+          <ul class="left">
+            <li><a href="#">Student</a></li>
+             <li><a href="#">Mail</a></li>
+              <li><a href="#">Canvas</a></li>
+               <li><a href="#">Calendar</a></li>
+                <li><a href="#">Profile</a></li>
+          </ul>
+        </section>
+      </nav>
+
+  <!-- picture -->
     <header class="row">
       <div class="large-12 columns">
-        <h1>MyEWU Portal</h1>
+        <img src="http://placekitten.com/960/270">
+        <h1>Thomas Flores</h1>
       </div>
     </header>
-
+ 
     <!-- Band of Content -->
     <article class="row">
       
-      <!-- Column 1 -->
-      <div class="large-6 columns">
-        <h2>Student Info.</h2>
-        
-        <!-- Student Info Tabs -->
-        <dl class="tabs" data-tab>
-          <dd class="active"><a href="#email">Email</a></dd>
-          <dd><a href="#accounts">Accounts</a></dd>
-          <dd><a href="#grades">Grades</a></dd>
-        </dl>
+      <!-- vertical tabs-->
+          <dl class="tabs vertical" data-tab>
+            <dd class="active"><a href="#panel1a">Register</a></dd>
+            <dd><a href="#panel2a">Tab 2</a></dd>
+            <dd><a href="#panel3a">Tab 3</a></dd>
+            <dd><a href="#panel4a">Tab 4</a></dd>
+          </dl>
+          <div class="tabs-content vertical">
+            <div class="content active" id="panel1a">
 
-        <div class="tabs-content">
-          <div class="content active" id="email">
-            <p>Email</p>
-          </div>
-          <div class="content" id="accounts">
-            <p>Accounts</p>
-          </div>
-          <div class="content" id="grades">
-            <p>Grades</p>
-          </div>
+            
+            <!--accordian  -->
+            <dl class="accordion" data-accordion>
+              <dd>
+
+                 <a href="#panel1">Select Term</a>
+                  <div id="panel1" class="content">
+                 <form>
+                      
+                        <div class="row">
+                        <div class="large-12 columns">
+                          <label>Select Term
+                            <select>
+                              <option value="husker">Spring '14</option>
+                              <option value="starbuck">Summer '14</option>
+                              <option value="hotdog">Fall '14</option>
+                              
+                            </select>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+
+                <a href="#panel2">Add/Drop Classes</a>
+                <div id="panel2"class="content">
+
+
+                <!-- class table -->
+                <h5> Classes Enrolled In:</h5> 
+                   <table>
+                    <thead>
+                      <tr>
+                        <th width="200">Class Name</th>
+                        <th>Course</th>
+                        <th width="150">Credits</th>
+                        <th width="150">Enroll</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>VCD 3</td>
+                        <td>DESN 380</td>
+                        <td>5</td>
+                        <td>Web Enrolled</td>
+                      </tr>
+                      
+                    
+                    </tbody>
+                  </table>
+
+                <h5> Planned Classes to take this Quarter:</h5> 
+                   <table>
+                    <thead>
+                      <tr>
+                        <th width="200">Class Name</th>
+                        <th>Course</th>
+                        <th width="150">Credits</th>
+                        <th width="150">Availability</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Web Design 2</td>
+                        <td>DESN 378</td>
+                        <td>4</td>
+                        <td><img src="./img/green.png"><a href="#">Open Sections</a></td>
+                      </tr>
+                      <tr>
+                        <td>Motion Graphics</td>
+                        <td>DESN 370</td>
+                        <td>5</td>
+                        <td><img src="./img/red.png">Closed</td>
+                      </tr>
+                      <tr>
+                        <td>Intro to Pysics</td>
+                        <td>PHYS 101</td>
+                        <td>5</td>
+                         <td><img src="./img/green.png"><a href="#">Open Sections</a></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+
+                   <form>
+                      
+                        <div class="row">
+                          <div class="large-2 columns">
+                            <label>CRV #
+                              <input type="text"/>
+                            </label>
+                          </div>
+                          <div class="large-2 columns">
+                            <label>CRV #
+                              <input type="text"/>
+                            </label>
+                          </div>
+                          <div class="large-2 columns">
+                            <label>CRV #
+                              <input type="text"/>
+                            </label>
+                          </div>
+                          <div class="large-2 columns">
+                            <label>CRV #
+                              <input type="text"/>
+                            </label>
+                          </div>
+                             <div class="medium-2 columns">
+                                <span class="button postfix">GO</span>
+                              </div>
+                            </div>
+                          
+                       
+                      </form>
+
+                 </div>
+                <a href="#panel3">Look Up Classes</a>
+                <div id="panel3" class="content">
+                  
+                  <form>
+                    <div class="row">
+                      <div class="large-12 columns">
+                        <label>Subject
+                          <select>
+                            <option value="husker">Physics</option>
+                            <option value="starbuck">Design</option>
+                            <option value="hotdog">Communications</option>
+                            <option value="apollo">Physical Ed</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                    <p>OR</p>
+                    <div class="row">
+                      <div class="large-4 columns">
+                        <label>Professor
+                          <input type="text" />
+                        </label>
+                      </div>
+                      
+                      
+                          <div class="medium-2 columns">
+                                <span class="button postfix">GO</span>
+                              </div>
+                            </div>
+                  </form>
+
+                     
+                </div>
+              </dd>
+            </dl>
+
+
+              <p> <div class="columns large-4">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, sunt quaerat a enim est accusantium facilis nisi iusto non blanditiis aperiam vel eum. Non, sunt sequi nulla eaque praesentium consectetur?</p>   
+                </div>
+
+                <div class="columns large-4">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, sunt quaerat a enim est accusantium facilis nisi iusto non blanditiis aperiam vel eum. Non, sunt sequi nulla eaque praesentium consectetur?</p>   
+                </div>
+
+                <div class="columns large-4">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, sunt quaerat a enim est accusantium facilis nisi iusto non blanditiis aperiam vel eum. Non, sunt sequi nulla eaque praesentium consectetur?</p>   
+                </div></p>
+            </div>
+
+
+            <div class="content" id="panel2a">
+              <p>Panel 2 content goes here.</p>
+            </div>
+            <div class="content" id="panel3a">
+              <p>Panel 3 content goes here.</p>
+            </div>
+            <div class="content" id="panel4a">
+              <p>Panel 4 content goes here.</p>
         </div>
       </div>
       
-      <!-- Column 2 -->
-      <div class="large-6 columns">
-        <h2>Column 2</h2>
-        
-        <ul class="side-nav">
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-          <li><a href="#">Link 4</a></li>
-        </ul>
 
-      </div>
 
     </article> 
     
     <!-- Footer -->
     <footer class="row">
-      
-      <div class="columns large-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, sunt quaerat a enim est accusantium facilis nisi iusto non blanditiis aperiam vel eum. Non, sunt sequi nulla eaque praesentium consectetur?</p>   
-      </div>
-
-      <div class="columns large-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, sunt quaerat a enim est accusantium facilis nisi iusto non blanditiis aperiam vel eum. Non, sunt sequi nulla eaque praesentium consectetur?</p>   
-      </div>
-
-      <div class="columns large-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, sunt quaerat a enim est accusantium facilis nisi iusto non blanditiis aperiam vel eum. Non, sunt sequi nulla eaque praesentium consectetur?</p>   
-      </div>
+   
 
     </footer>
 
