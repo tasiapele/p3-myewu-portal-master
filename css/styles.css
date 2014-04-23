@@ -29,11 +29,10 @@ h5{
     margin: 130px;
 }
 
-.not{
-    font-size: 20px;
-    color: red;
-}
 
+.sched{
+    padding: 20px;
+}
 
 .name{
     width: 300px !important;

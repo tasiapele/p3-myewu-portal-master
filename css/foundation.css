@@ -1288,7 +1288,8 @@ meta.foundation-mq-topbar {
         color: white;
         width: 75%;
         display: block;
-        padding: 0 15px; }
+         text-align: left;
+         padding: 0 10px; }
   .top-bar .toggle-topbar {
     position: absolute;
     right: 0;
@@ -2512,7 +2513,7 @@ div.switch {
 
 
     .tabs dd.active a {
-      background: #333332; }
+      background: none; }
   .tabs.radius dd:first-child a {
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px; }
@@ -2526,8 +2527,8 @@ div.switch {
     display: block;
     top: auto; }
     .tabs.vertical dd > a:hover {
-        background: #e1e1e1;
-        color: black; }
+        background: #82FF5F;
+        color: white; }
 
 .tabs-content {
   *zoom: 1;
@@ -4236,12 +4237,12 @@ ul.off-canvas-list {
     max-width: 800px; }
 
 table {
-  background: white;
+  background: #333332;
   margin-bottom: 1.25rem;
-  border: solid 1px #dddddd; }
+  border: solid 1px #4d4d4b; }
   table thead,
   table tfoot {
-    background: whitesmoke; }
+    background: #4d4d4b; }
     table thead tr th,
     table thead tr td,
     table tfoot tr th,
@@ -4249,13 +4250,13 @@ table {
       padding: 0.5rem 0.625rem 0.625rem;
       font-size: 0.875rem;
       font-weight: bold;
-      color: #222222;
+      color: white;
       text-align: left; }
   table tr th,
   table tr td {
     padding: 0.5625rem 0.625rem;
     font-size: 0.875rem;
-    color: #222222; }
+    color: white; }
   table tr.even, table tr.alt, table tr:nth-of-type(even) {
     background: #f9f9f9; }
   table thead tr th,
