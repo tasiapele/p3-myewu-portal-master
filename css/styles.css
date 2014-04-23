@@ -1,19 +1,19 @@
-
-/*Masthead*/
-header {
-    position: relative;
+h1{
+    text-align: right;
 }
 
-header h1 {
-    position: absolute;
-    left: 48px;
-    bottom: 0;
-    font-size: 2em;
+h5{
+    text-align: right;
 }
 
+.article{
+    margin: 130px;
+}
 
-
-
+.not{
+    font-size: 20px;
+    color: red;
+}
 
 
 
