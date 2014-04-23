@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <title>My EWU Portal</title>
-    
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/foundation.css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
     <link rel="stylesheet" href="css/styles.css" />    
     
     <script src="js/vendor/modernizr.js"></script>
@@ -41,7 +45,7 @@
           </ul>
 
           <!-- Left Nav Section -->
-          <ul class="left">
+          <ul class="right">
             <li><a href="#">Student</a></li>
              <li><a href="#">Mail</a></li>
               <li><a href="#">Canvas</a></li>
@@ -51,47 +55,77 @@
         </section>
       </nav>
 
-  <!-- picture -->
-    <header class="row">
-      <div class="large-12 columns">
-        
-        <h1>Thomas Flores</h1>
-        <h5>Status: Senior</h5>
-        <h5>Department: Eng.& Design</h5>
-      </div>
-    </header>
- 
-    <!-- Band of Content -->
-    <article class="row">
+          <!-- Band of Content -->
+    <header>
+      <div class="container">
+        <div class="grid_6 alpha">
 
       <!-- notifications -->
-      <p class="not">Notifications</p>
+      <h3>Notifications</h3>
 
-      <dl class="sub-nav">
-        <dt>Filter:</dt>
-        <dd class="active"><a href="#">All</a></dd>
-        <dd><a href="#">Active</a></dd>
-        <dd><a href="#">Pending</a></dd>
-        <dd><a href="#">Suspended</a></dd>
+      <dl class="tabs" data-tab>
+        <dd class="active"><a href="#panel2-1">All</a></dd>
+        <dd><a href="#panel2-2">Assignments</a></dd>
+        <dd><a href="#panel2-3">Class</a></dd>
+        <dd><a href="#panel2-4">EWU</a></dd>
       </dl>
+      <div class="tabs-content">
+        <div class="content active" id="panel2-1">
+          <p><span class="[Success Label secondary] [round radius] label">DESN 378: Class cancelled 4/23 @ 1:00pm</span><br>
+            <span class="[success alert secondary] [round radius] label">DESN 378: P3: Portal - 4/23 @ 1:00pm</span> <br><span class="[success alert secondary] [round radius] label">DESN 378: Assignment 4 - 4/27 @ Midnight</span> <br></p>
+
+
+        </div>
+        <div class="content" id="panel2-2">
+          <p><span class="[success alert secondary] [round radius] label">DESN 378: P3: Portal - 4/23 @ 1:00pm</span> <br><span class="[success alert secondary] [round radius] label">DESN 378: Assignment 4 - 4/27 @ Midnight</span> <br>
+
+            
+          </p>
+        </div>
+        <div class="content" id="panel2-3">
+          <p><span class="[Success Label secondary] [round radius] label">DESN 378: Class cancelled 4/23 @ 1:00pm</span></p>
+        </div>
+        <div class="content" id="panel2-4">
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+  <!-- picture -->
+
+    
+      <div class="grid_6 omega">
+        
+        <h1>Thomas Flores</h1>
+        <h4>Status: Senior</h4>
+        <h4>Department: Eng.& Design</h4>
+      </div>
+ 
+
+      </div>
+    </div>
+    </header>
       
+      <article class="row">
+        <div class="large-12 columns">
+
       <!-- vertical tabs-->
           <dl class="tabs vertical" data-tab>
             <dd class="active"><a href="#panel1a">Register</a></dd>
             <dd><a href="#panel2a">Records</a></dd>
             <dd><a href="#panel3a">Account</a></dd>
-            <dd><a href="#panel4a">Financial Aid</a></dd>
+            <dd><a href="#panel4a">Resources</a></dd>
           </dl>
           <div class="tabs-content vertical">
-            <div class="content active" id="panel1a">
+            <div class="content" id="panel1a">
 
             
               <!--accordian  -->
               <dl class="accordion" data-accordion>
                 <dd>
 
-                   <a href="#panel1">Select Term</a>
-                    <div id="panel1" class="content active">
+                   <a href="#panel1"><h5>Select Term</h5></a>
+                    <div id="panel1" class="content">
                    <form>
                         
                           <div class="row">
@@ -242,7 +276,7 @@
 
             <div class="content" id="panel2a">
               <p>
-                <h5>Holds: None</h5>
+                <h4>Holds: None</h4>
                 <br>
                 <ul class="button-group [radius round]">
                 <li><a href="#" class="button [secondary alert success]">Holds</a></li>
@@ -254,7 +288,7 @@
                 
 
                 <br><br><br><br><br><br><br>
-                <h5>Final Grades</h5>
+                <h4>Final Grades</h4>
                 <table>
                       <thead>
                         <tr>
@@ -296,7 +330,7 @@
             </div>
             <div class="content" id="panel3a">
               <p>
-            <h5>Account:</h5>
+            <h4>Account:</h4>
               <table>
                       <thead>
                         <tr>
@@ -330,11 +364,20 @@
             </div>
             <div class="content" id="panel4a">
               <p>
-            <h5>Based on your academic transcript, the status of your academic progress is <strong>Good Standing </strong>  as of Spring Quarter 2014.</h5>
             
-            <li><a href="#" class="button [secondary alert success]">Fin. Aid History</a></li>
-                <li><a href="#" class="button [secondary alert success]">Holds</a></li>
-               <li> <a href="#" class="button [secondary alert success]">Accept Awards</a></li>
+            
+            <ul class="button-group [radius round]">
+              <h5>Schedules:</h5>
+            <li> <a href="#" class="button [secondary alert success]">Class</a></li>
+            <li> <a href="#" class="button [secondary alert success]">Professors</a></li>
+            <li><a href="http://www.spokanetransit.com/files/route-table/66_Cheney_EWU_SEP_2013_tt-detail.png" class="button [secondary alert success]">Bus Times</a></li>
+
+            <br><br><br><br>
+            <h5>Work Resources:</h5>
+              <li> <a href="#" class="button [secondary alert success]">Openings</a></li>
+            <li> <a href="#" class="button [secondary alert success]">Internships</a></li>
+            <li><a href="#" class="button [secondary alert success]">Contacts</a></li>
+                
             </p>
         </div>
       </div>
